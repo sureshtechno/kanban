@@ -8,7 +8,7 @@ import { FiUpload } from "react-icons/fi";
 import { FiMoreVertical } from "react-icons/fi";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Rating } from 'react-simple-star-rating'
-import { Get, GetPost } from "../Api/Api";
+import { GetPost } from "../Api/Api";
  
 const Jobs = () => {
 
@@ -19,6 +19,8 @@ const Jobs = () => {
     const [data4, setData4] = useState([]);
 
     useEffect(() => {
+        let x=0
+        setRatingValue(x)
         apicall()
     }, [])
 

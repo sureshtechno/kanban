@@ -9,7 +9,6 @@ const Header = () => {
 
     const [search, setSearch] = useState('');
 
-    console.log(search);
     const getString = (evt) => {
         setSearch(evt.target.value);
         fetchApi(evt.target.value);
@@ -17,7 +16,7 @@ const Header = () => {
 
 
     function fetchApi(data) {
-        Get(search);
+        // Get(search);
     }
 
     return (

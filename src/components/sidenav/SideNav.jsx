@@ -6,8 +6,13 @@ import { FiBriefcase } from "react-icons/fi";
 import { FiAperture } from "react-icons/fi";
 import { FiUsers } from "react-icons/fi";
 import { FiSettings } from "react-icons/fi";
+import { Link } from 'react-router'
+import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
+
+
+
     return (
         <>
             <aside>
@@ -18,9 +23,9 @@ const SideNav = () => {
                         </figure>
                     </div>
                     <ul className="p-0 text-center">
-                        <li className="side-menu mb-4" data-toggle="tooltip" data-placement="top" title="Dashboard"><FiAperture /></li>
+                        <li className="side-menu mb-4" data-toggle="tooltip" data-placement="top" title="API Call"><a href="/dashboard"><FiAperture /></a></li>
                         <li className="side-menu  mb-4" data-toggle="tooltip" data-placement="top" title=""><FiHome /></li>
-                        <li className="side-menu active mb-4" data-toggle="tooltip" data-placement="top" title="Jobs"><a href="/"><FiBriefcase /></a></li>
+                        <li className="side-menu active mb-4" data-toggle="tooltip" data-placement="top" title="Drag & Drop"><a href="/"><FiBriefcase /></a></li>
                         <li className="side-menu  mb-4" data-toggle="tooltip" data-placement="top" title=""><FiUsers /></li>
                         <li className="side-menu  mb-4" data-toggle="tooltip" data-placement="top" title="Settings"><a href="/settings"><FiSettings /></a></li>
                     </ul>
