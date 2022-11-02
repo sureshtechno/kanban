@@ -1,0 +1,45 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+aside {
+    background: #2f4a5c;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 120px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.side-nav-menu .side-menu.active {
+    background-color: #6e50c7;
+}
+
+.side-nav-menu .side-menu {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.side-nav-menu .side-menu svg {
+    font-size: 24px;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 6px;
+}
+
+.side-nav-menu .side-menu:hover {
+    background-color: #6e50c7;
+}
+
+.side-menu a {
+    color: #fff !important;
+}

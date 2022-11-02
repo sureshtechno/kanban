@@ -1,0 +1,11 @@
+body {
+  background-color: #eeeef8 !important;
+}
+
+.main-section {
+  margin-left: 120px;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
