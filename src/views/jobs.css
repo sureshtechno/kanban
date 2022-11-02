@@ -40,9 +40,6 @@
     padding: 0.1em 3.5em 0.1em 0.9em;
     height: 50px;
     cursor: pointer;
-
-    /* reset */
-
     margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
