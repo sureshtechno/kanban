@@ -126,55 +126,13 @@ const Jobs = () => {
         setState({ quotes });
     }
     function onDragEndd2(result) {
-        if (!result.destination) {
-            return;
-        }
-
-        if (result.destination.index === result.source.index) {
-            return;
-        }
-
-        const quotes = reorder(
-            state.quotes,
-            result.source.index,
-            result.destination.index
-        );
-
-        setState({ quotes });
+        onDragEnd(result);
     }
     function onDragEndd3(result) {
-        if (!result.destination) {
-            return;
-        }
-
-        if (result.destination.index === result.source.index) {
-            return;
-        }
-
-        const quotes = reorder(
-            state.quotes,
-            result.source.index,
-            result.destination.index
-        );
-
-        setState({ quotes });
+        onDragEnd(result);
     }
     function onDragEndd4(result) {
-        if (!result.destination) {
-            return;
-        }
-
-        if (result.destination.index === result.source.index) {
-            return;
-        }
-
-        const quotes = reorder(
-            state.quotes,
-            result.source.index,
-            result.destination.index
-        );
-
-        setState({ quotes });
+        onDragEnd(result);
     }
 
     return (
