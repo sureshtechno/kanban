@@ -4,10 +4,7 @@ import dataset from './dataset'
 import Column from './Column'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 import '../../views/jobs.css'
-import { FiBriefcase } from "react-icons/fi";
-import { FiList } from "react-icons/fi";
-import { FiFilter } from "react-icons/fi";
-import { FiUpload } from "react-icons/fi";
+import { FiBriefcase, FiList, FiFilter, FiUpload } from "react-icons/fi";
 
 const Container = styled.div`
     display : flex;

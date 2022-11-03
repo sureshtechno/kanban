@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import './header.css';
 import logo from '../../logo.svg';
-import { FiPlus } from "react-icons/fi";
-import { FiGift } from "react-icons/fi";
-import { Get } from "../../Api/Api";
+import { FiPlus, FiGift } from "react-icons/fi";
 
 const Header = () => {
 
