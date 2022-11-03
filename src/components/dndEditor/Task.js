@@ -10,7 +10,10 @@ const Container = styled.div`
 `
 function Task(props) {
 
-    const [ratingValue, setRatingValue] = useState(0)
+    const [ratingValue] = useState(0)
+
+
+
     return (
         <Draggable draggableId={props.task.id} index={props.index}>
             {(provided, snapshot) => (

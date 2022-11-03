@@ -9,7 +9,7 @@ import { FiMoreVertical } from "react-icons/fi";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Rating } from 'react-simple-star-rating'
 import { GetPost } from "../Api/Api";
- 
+
 const Jobs = () => {
 
     const [ratingValue, setRatingValue] = useState(0)
@@ -19,42 +19,42 @@ const Jobs = () => {
     const [data4, setData4] = useState([]);
 
     useEffect(() => {
-        let x=0
+        let x = 0
         setRatingValue(x)
         apicall()
     }, [])
 
-    const apicall = async() => {
-        
-        await GetPost().then((res)=>{
-            let r = res.data.results.map((item, index) =>  
-                ({id: { name: 'CPF', value: 'id-'+index } , name: item?.name?.first, des: 'Developer' }) 
+    const apicall = async () => {
+
+        await GetPost().then((res) => {
+            let r = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id-' + index }, name: item?.name?.first, des: 'Developer' })
             )
-            let r1 = res.data.results.map((item, index) =>  
-            ({id: { name: 'CPF', value: 'id1-'+index } , name: item?.name?.first, des: 'Designer' }) 
-           )
-           setState({quotes: r.concat(r1)});
+            let r1 = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id1-' + index }, name: item?.name?.first, des: 'Designer' })
+            )
+            setState({ quotes: r.concat(r1) });
         })
-        await GetPost().then((res)=>{
-            let r = res.data.results.map((item, index) =>  
-            ({id: { name: 'CPF', value: 'id2-'+index } , name: item?.name?.first, des: 'Developer' }) 
-           )
-           let r1 = res.data.results.map((item, index) =>  
-           ({id: { name: 'CPF', value: 'id21-'+index } , name: item?.name?.first, des: 'Engineer' }) 
-          )          
-           setData2({quotes: r.concat(r1)});
+        await GetPost().then((res) => {
+            let r = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id2-' + index }, name: item?.name?.first, des: 'Developer' })
+            )
+            let r1 = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id21-' + index }, name: item?.name?.first, des: 'Engineer' })
+            )
+            setData2({ quotes: r.concat(r1) });
         })
-        await GetPost().then((res)=>{
-            let r = res.data.results.map((item, index) =>  
-            ({id: { name: 'CPF', value: 'id3-'+index } , name: item?.name?.first, des: 'Tester' }) 
-           )
-           setData3({quotes: r});
+        await GetPost().then((res) => {
+            let r = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id3-' + index }, name: item?.name?.first, des: 'Tester' })
+            )
+            setData3({ quotes: r });
         })
-        await GetPost().then((res)=>{
-            let r = res.data.results.map((item, index) =>  
-            ({id: { name: 'CPF', value: 'id4-'+index } , name: item?.name?.first, des: 'Tester' }) 
-           )
-           setData4({quotes: r});
+        await GetPost().then((res) => {
+            let r = res.data.results.map((item, index) =>
+                ({ id: { name: 'CPF', value: 'id4-' + index }, name: item?.name?.first, des: 'Tester' })
+            )
+            setData4({ quotes: r });
         })
 
     }
@@ -68,7 +68,6 @@ const Jobs = () => {
     };
 
     function Quote({ quote, index }) {
-        // console.log(quote);
         return (
             <Draggable draggableId={quote.id.value} index={index}>
                 {(provided) => (
@@ -102,10 +101,10 @@ const Jobs = () => {
     }
 
     const QuoteList = React.memo(function QuoteList({ quotes }) {
-if (quotes)
-        return quotes.map((quote, index) => (
-            <Quote quote={quote} index={index} key={quote.id.value} />
-        ));
+        if (quotes)
+            return quotes.map((quote, index) => (
+                <Quote quote={quote} index={index} key={quote.id.value} />
+            ));
 
     });
 
@@ -236,7 +235,7 @@ if (quotes)
 
             <div className="main-section mt-3 px-3">
                 <div className="row">
-                    
+
                     <div className="col-12 col-lg-6 col-xl-3">
                         <div className="card card-border-primary">
                             <div className="card-header open">
@@ -321,7 +320,7 @@ if (quotes)
                             </div>
                         </div>
                     </div>
-  
+
                 </div>
             </div>
 

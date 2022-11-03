@@ -16,7 +16,6 @@ const Header = () => {
 
 
     function fetchApi(data) {
-        // Get(search);
     }
 
     return (
