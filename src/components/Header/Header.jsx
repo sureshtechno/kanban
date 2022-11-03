@@ -11,13 +11,8 @@ const Header = () => {
 
     const getString = (evt) => {
         setSearch(evt.target.value);
-        fetchApi(evt.target.value);
+
     }
-
-
-    function fetchApi(data) {
-    }
-
     return (
         <>
             <header>
