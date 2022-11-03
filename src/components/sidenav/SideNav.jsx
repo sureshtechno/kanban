@@ -1,13 +1,8 @@
 import React from "react";
 import './sidenav.css'
 import logo from '../../logo.svg';
-import { FiHome } from "react-icons/fi";
-import { FiBriefcase } from "react-icons/fi";
-import { FiAperture } from "react-icons/fi";
-import { FiUsers } from "react-icons/fi";
-import { FiSettings } from "react-icons/fi";
-import { Link } from 'react-router'
-import { NavLink } from "react-router-dom";
+import { FiHome, FiBriefcase, FiAperture, FiUsers, FiSettings } from "react-icons/fi";
+
 
 const SideNav = () => {
 

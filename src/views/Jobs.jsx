@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './jobs.css';
 import '../App.css'
-import { FiBriefcase } from "react-icons/fi";
-import { FiList } from "react-icons/fi";
-import { FiFilter } from "react-icons/fi";
-import { FiUpload } from "react-icons/fi";
-import { FiMoreVertical } from "react-icons/fi";
+import { FiBriefcase, FiList, FiFilter, FiUpload, FiMoreVertical } from "react-icons/fi";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Rating } from 'react-simple-star-rating'
 import { GetPost } from "../Api/Api";
