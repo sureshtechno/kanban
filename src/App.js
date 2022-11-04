@@ -8,16 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Jobs from './views/Jobs';
 import Settings from './components/settings/Setting';
 import AppDND from './components/dndEditor/AppDND';
-import { AllProvider, AllContext } from './components/context/SearchContext'
-// import dataset from './components/dndEditor/dataset';
 
 function App() {
-  // const { dndDataset, datasetFN } = useContext(AllContext);
-
-  // useEffect(()=>{
-  //   datasetFN(dataset)
-  // },[])
-
   return (
     <>
       <BrowserRouter>

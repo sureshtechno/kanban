@@ -10,9 +10,7 @@ const Header = () => {
 
     const getString = (evt) => {
         console.log({ evt })
-        // setSearchtxt(evt.target.value);
         search(evt.target.value)
-        // fetchApi(evt.target.value);
     }
 
     return (
