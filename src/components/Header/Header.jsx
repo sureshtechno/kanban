@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import './header.css';
 import logo from '../../logo.svg';
 import { FiPlus, FiGift } from "react-icons/fi";
+import { AllContext } from '../context/SearchContext'
 
 const Header = () => {
 
-    const [search, setSearch] = useState('');
+    const { searchText, search } = useContext(AllContext);
 
     const getString = (evt) => {
-        setSearch(evt.target.value);
-
+        console.log({ evt })
+        // setSearchtxt(evt.target.value);
+        search(evt.target.value)
+        // fetchApi(evt.target.value);
     }
+
     return (
         <>
             <header>
@@ -25,7 +29,7 @@ const Header = () => {
                         <div className="col-md-5">
                             <div className="row">
                                 <div className="col-md-4">
-                                    <input className="form-control border-0 border-bottom custom-height" type="search" value={search} placeholder="search" id="example-search-input" onChange={getString}></input>
+                                    <input className="form-control border-0 border-bottom custom-height" type="search" value={searchText} placeholder="search" id="example-search-input" onChange={getString}></input>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="border-rights text-center">
