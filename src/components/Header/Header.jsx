@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import './header.css';
 import logo from '../../logo.svg';
 import { FiPlus, FiGift } from "react-icons/fi";
